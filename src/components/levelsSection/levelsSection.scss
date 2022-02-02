@@ -1,0 +1,587 @@
+$backgrond-box: #22222c;
+$boxes-color: #171721;
+$button-color: #32c58e;
+$line-color: #1c3a37;
+$level-line: #275349;
+$level-line-five: #393940;
+$buy-color: #3a3a43;
+$profit-color: #32c58e;
+$number: #51515e;
+@mixin dot-color-box-three() {
+    padding: 9px 9px;
+    position: absolute;
+    background: #22222c;
+    border: 2px solid #171721;
+    box-sizing: border-box;
+    border-radius: 30px;
+    margin: 40px 0px 0px 28px;
+}
+@mixin dot-color-black() {
+    padding: 9px 9px;
+    position: absolute;
+    background: #22222c;
+    border: 2px solid #171721;
+    box-sizing: border-box;
+    border-radius: 30px;
+    margin: 9px 0px 0px 25px;
+}
+
+@mixin dot-color() {
+    padding: 9px 9px;
+    margin: 8px 0px 0px 2px;
+    /* background: #32C58E; */
+    background: #32c58e;
+    border: 2px solid #171721;
+    box-sizing: border-box;
+    border-radius: 33px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    position: absolute;
+}
+@mixin left-transform() {
+    border: 1.3px dashed #50505f;
+    transform: matrix(-0.63, 0.64, 1.01, 0.56, 0, 0);
+    width: 45.67px;
+}
+@mixin right-transform() {
+    border: 1.3px dashed #50505f;
+    transform: matrix(0.63, 0.64, -1.01, 0.56, 0, 0);
+    width: 45.67px;
+}
+@mixin mini-text() {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    color: white;
+    margin: 0px;
+    padding: 4px 0px 0px 6px;
+}
+@mixin number-color() {
+    color: #32c58e;
+    margin: 0px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 6px 0px 0px 24px;
+    font-family: inter;
+}
+@mixin number() {
+    color: $number;
+    margin: 0px;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: inter;
+}
+@mixin level-number() {
+    background-color: $boxes-color;
+    border-radius: 12px;
+    padding: 8px 71px 8px 7px;
+}
+@mixin level-box() {
+    border: 2px solid $level-line;
+    border-radius: 12px;
+    padding: 9px 8px 6px 8px;
+    height: 171px;
+    width: 162px;
+    margin: 0px 21px 0px 0px;
+}
+@mixin level-box-five() {
+    border: 2px solid $level-line-five;
+    border-radius: 12px;
+    height: 184px;
+    width: 169px;
+    margin: 0px 0px 0px -2px;
+    background: #161620;
+}
+@mixin level2-boxes() {
+    border: 2px solid $level-line-five;
+    border-radius: 12px;
+    height: 184px;
+    width: 173px;
+}
+@mixin text-color($value) {
+    font-size: $value;
+    color: $button-color;
+}
+@mixin boxShape() {
+    border-radius: 12px;
+    background-color: $backgrond-box;
+    padding: 8px 16px 8px 16px;
+}
+@mixin boxInnerPadding() {
+    padding: 13px 13px 14px 13px;
+}
+@mixin text-size() {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffffff;
+}
+.container {
+    .levelsBoxexFlex {
+        display: flex;
+        // leftsidebox
+        .leftSide {
+            width: 23%;
+            .leftSideBox {
+                @include boxShape();
+                padding: 1px 0px 0px 0px;
+                .upperBox {
+                    border-radius: 12px;
+                    background: $boxes-color;
+                    margin: 12px 10px 12px 10px;
+                    .imgTextflex {
+                        @include boxInnerPadding();
+                        display: flex;
+                        justify-content: space-between;
+                        img {
+                            width: 86px;
+                        }
+                        .idText {
+                            padding: 7px 0px 0px 0px;
+                            h1 {
+                                font-family: Inter;
+                                font-weight: 600;
+                                font-size: 35px;
+                                color: #ffffff;
+                                margin: 0px;
+                            }
+                            p {
+                                font-family: Inter;
+                                font-weight: 500;
+                                font-size: 20px;
+                                line-height: 24px;
+                                margin: 0px 0px 0px -14px;
+                                padding: 4px 0px 0px 0px;
+                                color: #646472;
+                            }
+                        }
+                    }
+                    .button-placement {
+                        padding: 0px 15px 14px 16px;
+                        .button-styling {
+                            background: $button-color;
+                            border-radius: 12px;
+                            padding: 16px 0px 16px 0px;
+                            p {
+                                text-align: center;
+                                margin: 0px;
+                                font-family: Inter;
+                                font-weight: 500;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+                .bottomBox {
+                    @extend .upperBox;
+                    @include boxInnerPadding();
+                    .earningText {
+                        padding: 7px 0px 0px 0px;
+                        h1 {
+                            font-family: Inter;
+                            font-weight: 600;
+                            font-size: 30px;
+                            color: #ffffff;
+                            margin: 0px;
+                        }
+                        p {
+                            font-family: Inter;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 23px;
+                            margin: 0px;
+                            color: #646472;
+                            padding: 9px 0px 0px 0px;
+                        }
+                    }
+                    .button-placement-bottom {
+                        padding: 29px 0px 0px 0px;
+                        .button-styling {
+                            background: $button-color;
+                            border-radius: 12px;
+                            padding: 16px 0px 16px 0px;
+                            p {
+                                text-align: center;
+                                margin: 0px;
+                                font-family: Inter;
+                                font-weight: 500;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+                .notificationConatiner {
+                    @include boxInnerPadding();
+                    .notificationFlex {
+                        display: flex;
+                        img {
+                            width: 42px;
+                        }
+                        .notificationText {
+                            padding: 2px 0px 0px 15px;
+                            h1 {
+                                @include text-size();
+                            }
+                        }
+                    }
+                    .mapFlex {
+                        display: flex;
+                        padding: 15px 0px 15px 0px;
+                        img {
+                            width: 42px;
+                        }
+                        .mapText {
+                            padding: 2px 0px 0px 15px;
+                            display: flex;
+                            .textOne {
+                                h1 {
+                                    padding: 1px 0px 0px 0px;
+                                    font-style: normal;
+                                    font-weight: bold;
+                                    font-size: 15px;
+                                    color: #32c58e;
+                                }
+                            }
+                            .textTwo {
+                                display: flex;
+                                h1 {
+                                    padding: 1px 0px 0px 0px;
+                                    font-style: normal;
+                                    font-weight: bold;
+                                    font-size: 15px;
+                                    padding: 0px 0px 0px 13px;
+                                    color: #646472;
+                                }
+                            }
+                        }
+                    }
+                    .greenLine {
+                        width: 100%;
+                        height: 2px;
+                        background-color: $line-color;
+                    }
+                    .partnersnFlex {
+                        display: flex;
+                        justify-content: space-between;
+                        .numberPartner {
+                            h1 {
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 29px;
+                                color: white;
+                                padding: 4px 0px 0px 0px;
+                            }
+                        }
+
+                        .partnersData {
+                            display: flex;
+                            padding: 17px 0px 0px 0px;
+                            img {
+                                width: 42px;
+                            }
+                            .partnersText {
+                                display: flex;
+
+                                h1 {
+                                    @include text-size();
+                                    padding: 4px 0px 0px 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            // affiliateLinkbox
+            .affiliateLinkbox {
+                padding: 34px 0px 0px 0px;
+
+                .affiliateBox {
+                    @include boxShape();
+                    @include boxInnerPadding();
+                    .affiliateboxColor {
+                        background: $boxes-color;
+                        border: 2px solid #275349;
+                        box-sizing: border-box;
+                        border-radius: 12px;
+                        padding: 0px 15px 13px 15px;
+                        h1 {
+                            font-weight: 500;
+                            font-size: 22px;
+                            color: #ffffff;
+                        }
+                        .linkButton {
+                            background: $button-color;
+                            border-radius: 12px;
+                            display: flex;
+                            margin: 24px 0px 0px 0px;
+                            .linkText {
+                                padding: 16px 12px 16px 18px;
+                                p {
+                                    font-weight: 500;
+                                    font-size: 18px;
+                                    color: $boxes-color;
+                                    margin: 0px;
+                                }
+                            }
+                            .linkImg {
+                                display: flex;
+                                align-items: center;
+                                img {
+                                    width: 17px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // rightSidebox
+        .rightSideBox {
+            @include boxShape();
+            width: 71%;
+            margin: 0px 0px 0px 33px;
+            .levels {
+                h1 {
+                    font-style: italic;
+                    font-weight: 800;
+                    font-family: inter;
+                    @include text-color(37px);
+                    padding: 5px 0px 4px 21px;
+                }
+            }
+            .levelLine {
+                height: 1px;
+                background-color: $line-color;
+            }
+            .boxesContainer {
+                padding: 48px 0px 0px 8px;
+                display: flex;
+                .levelBox {
+                    @include level-box();
+
+                    .levelNumber {
+                        @include level-number();
+                        display: flex;
+                        .number {
+                            @include boxShape();
+                            p {
+                                @include number();
+                            }
+                        }
+                        .numberPurple {
+                            h1 {
+                                @include number-color();
+                            }
+                        }
+                    }
+                    // diagramdata
+                    .diagramContainer {
+                        display: flex;
+                        .leftDiagram {
+                            padding: 15px 0px 0px 37px;
+                            .transform {
+                                @include left-transform();
+                            }
+                            .colorDot {
+                                @include dot-color();
+                            }
+                        }
+                        .rightDiagram {
+                            margin: 15px 0px 0px -15px;
+                            .transformright {
+                                @include right-transform();
+                            }
+                            .colorDotright {
+                                @include dot-color-black();
+                            }
+                        }
+                    }
+                    // bottom data
+                    .bottomboxdata {
+                        display: flex;
+                        padding: 70px 0px 0px 13px;
+                        .bottomboxleft {
+                            display: flex;
+                            .Minipersonimg {
+                                img {
+                                    width: 24px;
+                                }
+                            }
+                            .miniText {
+                                p {
+                                    @include mini-text();
+                                }
+                            }
+                        }
+                        .bottomboxright {
+                            display: flex;
+                            padding: 0px 0px 0px 16px;
+                            .reloadimg {
+                                img {
+                                    width: 24px;
+                                }
+                            }
+                            .miniTextright {
+                                p {
+                                    @include mini-text();
+                                }
+                            }
+                        }
+                    }
+                    ////
+                    .box-two-diagram {
+                        display: flex;
+                        .leftSideFlex {
+                            display: flex;
+                            .leftSidelineDiagram {
+                                padding: 16px 0px 0px 0px;
+                                .leftSideLine {
+                                    @include left-transform();
+                                }
+                                .leftSideDotTwo {
+                                    @include dot-color();
+                                }
+                            }
+                            .rightside {
+                                margin: 16px 0px 0px -15px;
+                                .rightSideLine {
+                                    @include right-transform();
+                                }
+                                .rightSideDotTwo {
+                                    @include dot-color-black();
+                                }
+                            }
+                        }
+                    }
+                    // thirdboxdots
+                    .firstLineDots {
+                        display: flex;
+                        padding: 4px 0px 0px 26px;
+                        .colorfulldot {
+                            @include dot-color();
+                        }
+                        .colorfulldot2 {
+                            @include dot-color();
+                            margin: 8px 0px 0px 30px;
+                        }
+                        .colorfulldot3 {
+                            @include dot-color();
+                            margin: 8px 0px 0px 59px;
+                        }
+                        .borerdot4 {
+                            @include dot-color-black();
+                            margin: 9px 0px 0px 88px;
+                        }
+                    }
+                    .firstLineDotsbottom {
+                        display: flex;
+                        padding: 0px 0px 15px 0px;
+                        .borerdotbottom1 {
+                            @include dot-color-box-three();
+                        }
+                        .borerdotbottom2 {
+                            @include dot-color-box-three();
+                            margin: 40px 0px 0px 57px;
+                        }
+                        .borerdotbottom3 {
+                            @include dot-color-box-three();
+                            margin: 40px 0px 0px 86px;
+                        }
+                        .borerdotbottom4 {
+                            @include dot-color-box-three();
+                            margin: 40px 0px 0px 115px;
+                        }
+                    }
+                }
+                .levelBoxFive {
+                    @include level-box-five();
+                    .leveboxfivedata {
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        align-items: center;
+                        height: 100%;
+                        h1 {
+                            color: $buy-color;
+                            font-family: Inter;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+            .bottomboxContainer {
+                display: flex;
+                .line2Box1 {
+                    @include level2-boxes();
+                    margin: 30px 26px 0px 11px;
+                }
+                .line2Box2 {
+                    @include level2-boxes();
+                    margin: 30px 18px 0px 0px;
+                }
+                .line2Box3 {
+                    @include level2-boxes();
+                    margin: 30px 21px 0px 7px;
+                }
+                .line2Box4 {
+                    @include level2-boxes();
+                    margin: 30px 15px 0px 4px;
+                }
+                .line2Box5 {
+                    @include level2-boxes();
+                    margin: 30px 0px 0px 9px;
+                    .boxBottombutton {
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .boxBottonGreenButton {
+                            background: rgba(39, 83, 73, 0.5);
+                            border-radius: 12px;
+                            padding: 10px 36px 10px 36px;
+                            h1 {
+                                font-family: Inter;
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 18px;
+                                line-height: 22px;
+                                text-align: center;
+                                color: rgba(255, 255, 255, 0.2);
+                                margin: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+            .boxesdownData {
+                padding: 60px 0px 0px 7px;
+                .boxesDownLine {
+                    height: 1px;
+                    background-color: $line-color;
+                }
+                .linedowndata {
+                    padding: 33px 0px 0px 0px;
+                    h1 {
+                        color: $profit-color;
+                        font-family: Inter;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                    }
+                    p {
+                        color: $number;
+                        font-family: inter;
+                        font-size: 17px;
+                        font-weight: 500;
+                        padding-top: 6px;
+                    }
+                }
+            }
+        }
+    }
+}

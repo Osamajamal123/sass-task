@@ -1,0 +1,580 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Alegreya Sans", sans-serif;
+    background: #171721;
+    min-height: 100vh;
+}
+.container {
+    margin: auto;
+    max-width: 1400px;
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .container .haederContainer .leftSideFlex .navbars ul {
+        display: none !important;
+    }
+    .container .haederContainer .rightSide .borders {
+        display: none !important;
+    }
+    .container .haederContainer .rightSide .buttonImagesFlex {
+        display: none !important;
+    }
+    .container .haederContainer .rightSide .countryFlex {
+        display: none !important;
+    }
+    .container .boxContainer .boxWidth {
+        flex-direction: column !important;
+    }
+    .container .boxContainer .boxWidth .boxSpace {
+        justify-content: center !important;
+    }
+    .container .boxContainer .boxWidth .boxSpace .box {
+        width: 93% !important;
+        margin-bottom: 20px !important;
+    }
+    .container .haederContainer .leftSideFlex .leftSideheader .logoImg {
+        padding-left: 10px !important;
+    }
+    .container .levelsBoxexFlex {
+        flex-direction: column !important;
+    }
+    .container .levelsBoxexFlex .leftSide {
+        width: 100% !important;
+    }
+    .container .levelsBoxexFlex .rightSideBox .boxesContainer {
+        flex-direction: column !important;
+        padding: 0px !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container .levelsBoxexFlex .rightSideBox {
+        width: 100% !important;
+        margin: 27px 0px 0px 0px !important;
+        padding: 0px !important;
+    }
+    .container .levelsBoxexFlex .rightSideBox .levels h1 {
+        text-align: center !important;
+        padding: 5px 0px 4px 0px !important;
+    }
+    .container .levelsBoxexFlex .rightSideBox {
+        display: flex !important;
+        justify-content: center !important;
+        flex-direction: column !important;
+    }
+    .container .levelsBoxexFlex .rightSideBox .boxesContainer .levelBox {
+        margin: 28px 0px 0px 0px !important;
+    }
+    .rightSideBox .boxesContainer .levelBoxFive {
+        width: 180px !important;
+        margin: 26px 0px 0px 0px !important;
+    }
+    .container .levelsBoxexFlex .rightSideBox .bottomboxContainer {
+        flex-direction: column !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container .levelsBoxexFlex .rightSideBox .bottomboxContainer .line2Box1 {
+        margin: 30px 0px 0px 0px !important;
+    }
+    .container .levelsBoxexFlex .rightSideBox .bottomboxContainer .line2Box3 {
+        margin: 30px 0px 0px 0px !important;
+    }
+    .container .levelsBoxexFlex .rightSideBox .bottomboxContainer .line2Box4 {
+        margin: 30px 0px 0px 0px !important;
+    }
+
+    .container .levelsBoxexFlex .rightSideBox .bottomboxContainer .line2Box5 {
+        margin: 30px 0px 0px 0px;
+    }
+    .container .levelsBoxexFlex .rightSideBox .bottomboxContainer .line2Box2 {
+        margin: 30px 0px 0px 0px;
+    }
+    .container .levelsBoxexFlex .rightSideBox .boxesdownData .linedowndata h1 {
+        text-align: center;
+    }
+    .container .levelsBoxexFlex .rightSideBox .boxesdownData .linedowndata p {
+        text-align: center;
+    }
+    .container .promotionFlex {
+        flex-direction: column;
+    }
+    .container .promotionFlex .sectionLeftBoxes {
+        width: 100% !important;
+    }
+    .container .promotionFlex .sectionCenterContainer {
+        // margin: 0px 0px 0px 0px!important;
+        width: 100% !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container .promotionFlex .sectionCenterContainer .backgroundCenter .bitcoinDlex img {
+        width: 271px !important;
+    }
+    .container .promotionFlex .sectionCenterContainer .backgroundCenter .carouselData .colorh3 {
+        width: 100px !important;
+    }
+    .container .promotionFlex .sectionCenterContainer .backgroundCenter .carouselData .colorh1 h1 {
+        font-size: 16px !important;
+    }
+    .container .promotionFlex .sectionCenterContainer .backgroundCenter .carouselData .colorh2 h1 {
+        font-size: 16px !important;
+    }
+    .container .promotionFlex .sectionCenterContainer .backgroundCenter .buttonCenter .blackButton {
+        padding: 9px 18px 9px 15px !important;
+    }
+    .container .promotionFlex .sectionRightContainer {
+        padding: 0px 0px 0px 0px !important;
+        width: 100% !important;
+        margin-top: 20px !important;
+    }
+    .container .boxContainer .boxWidth .boxSpace .boxText .boxDataFlex .titleText .numberText h1 {
+        font-size: 30px !important;
+    }
+    .container .promotionFlex .sectionCenterContainer .backgroundCenter {
+        padding: 0px !important;
+    }
+    .container .promotionFlex .sectionCenterContainer .backgroundCenter h1 {
+        text-align: center;
+    }
+    .container .promotionFlex .sectionCenterContainer .backgroundCenter .bitcoinDlex {
+        justify-content: center;
+    }
+    .container .promotionFlex .sectionCenterContainer .backgroundCenter .carouselData {
+        justify-content: center;
+    }
+    .container .footer {
+        padding: 0px 0px 0px 0px !important;
+    }
+    .container .footer .footerContainer {
+        flex-direction: column !important;
+        padding: 34px 0px 20px 0px !important;
+    }
+    .container .footer .footerContainer .leftLogoFlex {
+        flex-direction: column !important;
+        width: 100% !important;
+    }
+    .container .footer .footerContainer .leftLogoFlex .logoImg {
+        display: flex !important;
+        justify-content: center !important;
+    }
+    .container .footer .footerContainer .leftLogoFlex .logoData {
+        padding: 0px 0px 0px 0px !important;
+    }
+    .container .footer .footerContainer .leftLogoFlex .logoData p {
+        text-align: center !important;
+    }
+    .container .footer .footerContainer .centerContainer {
+        padding: 0px 0px 0px 0px !important;
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+    .container .footer .footerContainer .centerContainer .upperTelegramFlex {
+        padding: 37px 41px 0px 0px !important;
+    }
+    .container .footer .footerContainer .centerContainer .downTelegramFlex {
+        padding: 37px 0px 0px 0px !important;
+    }
+    .container .footer .footerContainer .rightContainer {
+        padding: 50px 0px 0px 0px !important;
+        width: 100% !important;
+    }
+    .container .footer .footerContainer .rightContainer h1 {
+        text-align: center;
+    }
+    .container .footer .footerContainer .rightContainer .rightDownFlex {
+        flex-direction: column !important;
+    }
+    .container .footer .footerContainer .rightContainer .rightDownFlex .facebookImg {
+        display: flex !important;
+        justify-content: center !important;
+        padding: 22px 0px !important;
+    }
+    .container .footer .footerContainer .rightContainer .rightDownFlex .InstaImg{
+        display: flex !important;
+        justify-content: center !important;
+    }
+    .container .footer .footerBottomText {
+        text-align: center !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .container .haederContainer .leftSideFlex .navbars ul {
+        display: none !important;
+    }
+    .container .haederContainer .rightSide .borders {
+        display: none !important;
+    }
+    .container .haederContainer .rightSide .buttonImagesFlex {
+        display: none !important;
+    }
+    .container .haederContainer .rightSide .countryFlex {
+        display: none !important;
+    }
+    .container .boxContainer .boxWidth {
+        flex-direction: column !important;
+    }
+    .container .boxContainer .boxWidth .boxSpace {
+        justify-content: center !important;
+    }
+    .container .boxContainer .boxWidth .boxSpace .box {
+        width: 93% !important;
+        margin-bottom: 20px !important;
+    }
+    .container .haederContainer .leftSideFlex .leftSideheader .logoImg {
+        padding-left: 10px !important;
+    }
+    .container .levelsBoxexFlex {
+        flex-direction: column !important;
+    }
+    .container .levelsBoxexFlex .leftSide {
+        width: 100% !important;
+    }
+    .container .levelsBoxexFlex .rightSideBox .boxesContainer {
+        flex-direction: column !important;
+        padding: 0px !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container .levelsBoxexFlex .rightSideBox {
+        width: 100% !important;
+        margin: 27px 0px 0px 0px !important;
+        padding: 0px !important;
+    }
+    .container .levelsBoxexFlex .rightSideBox .levels h1 {
+        text-align: center !important;
+        padding: 5px 0px 4px 0px !important;
+    }
+    .container .levelsBoxexFlex .rightSideBox {
+        display: flex !important;
+        justify-content: center !important;
+        flex-direction: column !important;
+    }
+    .container .levelsBoxexFlex .rightSideBox .boxesContainer .levelBox {
+        margin: 28px 0px 0px 0px !important;
+    }
+    .rightSideBox .boxesContainer .levelBoxFive {
+        width: 180px !important;
+        margin: 26px 0px 0px 0px !important;
+    }
+    .container .levelsBoxexFlex .rightSideBox .bottomboxContainer {
+        flex-direction: column !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container .levelsBoxexFlex .rightSideBox .bottomboxContainer .line2Box1 {
+        margin: 30px 0px 0px 0px !important;
+    }
+    .container .levelsBoxexFlex .rightSideBox .bottomboxContainer .line2Box3 {
+        margin: 30px 0px 0px 0px !important;
+    }
+    .container .levelsBoxexFlex .rightSideBox .bottomboxContainer .line2Box4 {
+        margin: 30px 0px 0px 0px !important;
+    }
+
+    .container .levelsBoxexFlex .rightSideBox .bottomboxContainer .line2Box5 {
+        margin: 30px 0px 0px 0px;
+    }
+    .container .levelsBoxexFlex .rightSideBox .bottomboxContainer .line2Box2 {
+        margin: 30px 0px 0px 0px;
+    }
+    .container .levelsBoxexFlex .rightSideBox .boxesdownData .linedowndata h1 {
+        text-align: center;
+    }
+    .container .levelsBoxexFlex .rightSideBox .boxesdownData .linedowndata p {
+        text-align: center;
+    }
+    .container .promotionFlex {
+        flex-direction: column;
+    }
+    .container .promotionFlex .sectionLeftBoxes {
+        width: 100% !important;
+    }
+    .container .promotionFlex .sectionCenterContainer {
+        // margin: 0px 0px 0px 0px!important;
+        width: 100% !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container .promotionFlex .sectionCenterContainer .backgroundCenter .bitcoinDlex img {
+        width: 271px !important;
+    }
+    .container .promotionFlex .sectionCenterContainer .backgroundCenter .carouselData .colorh3 {
+        width: 100px !important;
+    }
+    .container .promotionFlex .sectionCenterContainer .backgroundCenter .carouselData .colorh1 h1 {
+        font-size: 16px !important;
+    }
+    .container .promotionFlex .sectionCenterContainer .backgroundCenter .carouselData .colorh2 h1 {
+        font-size: 16px !important;
+    }
+    .container .promotionFlex .sectionCenterContainer .backgroundCenter .buttonCenter .blackButton {
+        padding: 9px 18px 9px 15px !important;
+    }
+    .container .promotionFlex .sectionRightContainer {
+        padding: 0px 0px 0px 0px !important;
+        width: 100% !important;
+        margin-top: 20px !important;
+    }
+    .container .boxContainer .boxWidth .boxSpace .boxText .boxDataFlex .titleText .numberText h1 {
+        font-size: 30px !important;
+    }
+    .container .promotionFlex .sectionCenterContainer .backgroundCenter {
+        padding: 20px 0px !important;
+    }
+    .container .promotionFlex .sectionCenterContainer .backgroundCenter h1 {
+        text-align: center;
+    }
+    .container .promotionFlex .sectionCenterContainer .backgroundCenter .bitcoinDlex {
+        justify-content: center;
+    }
+    .container .promotionFlex .sectionCenterContainer .backgroundCenter .carouselData {
+        justify-content: center;
+    }
+    .container .footer {
+        padding: 0px 0px 0px 0px !important;
+    }
+    .container .footer .footerContainer {
+        flex-direction: column !important;
+        padding: 34px 0px 20px 0px !important;
+    }
+    .container .footer .footerContainer .leftLogoFlex {
+        flex-direction: column !important;
+        width: 100% !important;
+    }
+    .container .footer .footerContainer .leftLogoFlex .logoImg {
+        display: flex !important;
+        justify-content: center !important;
+    }
+    .container .footer .footerContainer .leftLogoFlex .logoData {
+        padding: 0px 0px 0px 0px !important;
+    }
+    .container .footer .footerContainer .leftLogoFlex .logoData p {
+        text-align: center !important;
+    }
+    .container .footer .footerContainer .centerContainer {
+        padding: 0px 0px 0px 0px !important;
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+    .container .footer .footerContainer .centerContainer .upperTelegramFlex {
+        padding: 37px 41px 0px 0px !important;
+    }
+    .container .footer .footerContainer .centerContainer .downTelegramFlex {
+        padding: 37px 0px 0px 0px !important;
+    }
+    .container .footer .footerContainer .rightContainer {
+        padding: 50px 0px 0px 0px !important;
+        width: 100% !important;
+    }
+    .container .footer .footerContainer .rightContainer h1 {
+        text-align: center;
+    }
+    .container .footer .footerContainer .rightContainer .rightDownFlex {
+        flex-direction: column !important;
+    }
+    .container .footer .footerContainer .rightContainer .rightDownFlex .facebookImg {
+        display: flex !important;
+        justify-content: center !important;
+        padding: 22px 0px !important;
+    }
+    .container .footer .footerContainer .rightContainer .rightDownFlex .InstaImg{
+        display: flex !important;
+        justify-content: center !important;
+    }
+    .container .footer .footerBottomText {
+        text-align: center !important;
+    }
+}
+
+@media only screen and (min-width: 1025) and (max-width: 1326px) {
+    .container .haederContainer .leftSideFlex .navbars ul {
+        display: none !important;
+    }
+    .container .haederContainer .rightSide .borders {
+        display: none !important;
+    }
+    .container .haederContainer .rightSide .buttonImagesFlex {
+        display: none !important;
+    }
+    .container .haederContainer .rightSide .countryFlex {
+        display: none !important;
+    }
+    .container .boxContainer .boxWidth {
+        flex-direction: column !important;
+    }
+    .container .boxContainer .boxWidth .boxSpace {
+        justify-content: center !important;
+    }
+    .container .boxContainer .boxWidth .boxSpace .box {
+        width: 93% !important;
+        margin-bottom: 20px !important;
+    }
+    .container .haederContainer .leftSideFlex .leftSideheader .logoImg {
+        padding-left: 10px !important;
+    }
+    .container .levelsBoxexFlex {
+        flex-direction: column !important;
+    }
+    .container .levelsBoxexFlex .leftSide {
+        width: 100% !important;
+    }
+    .container .levelsBoxexFlex .rightSideBox .boxesContainer {
+        flex-direction: column !important;
+        padding: 0px !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container .levelsBoxexFlex .rightSideBox {
+        width: 100% !important;
+        margin: 27px 0px 0px 0px !important;
+        padding: 0px !important;
+    }
+    .container .levelsBoxexFlex .rightSideBox .levels h1 {
+        text-align: center !important;
+        padding: 5px 0px 4px 0px !important;
+    }
+    .container .levelsBoxexFlex .rightSideBox {
+        display: flex !important;
+        justify-content: center !important;
+        flex-direction: column !important;
+    }
+    .container .levelsBoxexFlex .rightSideBox .boxesContainer .levelBox {
+        margin: 28px 0px 0px 0px !important;
+    }
+    .rightSideBox .boxesContainer .levelBoxFive {
+        width: 180px !important;
+        margin: 26px 0px 0px 0px !important;
+    }
+    .container .levelsBoxexFlex .rightSideBox .bottomboxContainer {
+        flex-direction: column !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container .levelsBoxexFlex .rightSideBox .bottomboxContainer .line2Box1 {
+        margin: 30px 0px 0px 0px !important;
+    }
+    .container .levelsBoxexFlex .rightSideBox .bottomboxContainer .line2Box3 {
+        margin: 30px 0px 0px 0px !important;
+    }
+    .container .levelsBoxexFlex .rightSideBox .bottomboxContainer .line2Box4 {
+        margin: 30px 0px 0px 0px !important;
+    }
+
+    .container .levelsBoxexFlex .rightSideBox .bottomboxContainer .line2Box5 {
+        margin: 30px 0px 0px 0px;
+    }
+    .container .levelsBoxexFlex .rightSideBox .bottomboxContainer .line2Box2 {
+        margin: 30px 0px 0px 0px;
+    }
+    .container .levelsBoxexFlex .rightSideBox .boxesdownData .linedowndata h1 {
+        text-align: center;
+    }
+    .container .levelsBoxexFlex .rightSideBox .boxesdownData .linedowndata p {
+        text-align: center;
+    }
+    .container .promotionFlex {
+        flex-direction: column;
+    }
+    .container .promotionFlex .sectionLeftBoxes {
+        width: 100% !important;
+    }
+    .container .promotionFlex .sectionCenterContainer {
+        // margin: 0px 0px 0px 0px!important;
+        width: 100% !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container .promotionFlex .sectionCenterContainer .backgroundCenter .bitcoinDlex img {
+        width: 271px !important;
+    }
+    .container .promotionFlex .sectionCenterContainer .backgroundCenter .carouselData .colorh3 {
+        width: 100px !important;
+    }
+    .container .promotionFlex .sectionCenterContainer .backgroundCenter .carouselData .colorh1 h1 {
+        font-size: 16px !important;
+    }
+    .container .promotionFlex .sectionCenterContainer .backgroundCenter .carouselData .colorh2 h1 {
+        font-size: 16px !important;
+    }
+    .container .promotionFlex .sectionCenterContainer .backgroundCenter .buttonCenter .blackButton {
+        padding: 9px 18px 9px 15px !important;
+    }
+    .container .promotionFlex .sectionRightContainer {
+        padding: 0px 0px 0px 0px !important;
+        width: 100% !important;
+        margin-top: 20px !important;
+    }
+    .container .boxContainer .boxWidth .boxSpace .boxText .boxDataFlex .titleText .numberText h1 {
+        font-size: 30px !important;
+    }
+    .container .promotionFlex .sectionCenterContainer .backgroundCenter {
+        padding: 20px 0px !important;
+    }
+    .container .promotionFlex .sectionCenterContainer .backgroundCenter h1 {
+        text-align: center;
+    }
+    .container .promotionFlex .sectionCenterContainer .backgroundCenter .bitcoinDlex {
+        justify-content: center;
+    }
+    .container .promotionFlex .sectionCenterContainer .backgroundCenter .carouselData {
+        justify-content: center;
+    }
+    .container .footer {
+        padding: 0px 0px 0px 0px !important;
+    }
+    .container .footer .footerContainer {
+        flex-direction: column !important;
+        padding: 34px 0px 20px 0px !important;
+    }
+    .container .footer .footerContainer .leftLogoFlex {
+        flex-direction: column !important;
+        width: 100% !important;
+    }
+    .container .footer .footerContainer .leftLogoFlex .logoImg {
+        display: flex !important;
+        justify-content: center !important;
+    }
+    .container .footer .footerContainer .leftLogoFlex .logoData {
+        padding: 0px 0px 0px 0px !important;
+    }
+    .container .footer .footerContainer .leftLogoFlex .logoData p {
+        text-align: center !important;
+    }
+    .container .footer .footerContainer .centerContainer {
+        padding: 0px 0px 0px 0px !important;
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+    .container .footer .footerContainer .centerContainer .upperTelegramFlex {
+        padding: 37px 41px 0px 0px !important;
+    }
+    .container .footer .footerContainer .centerContainer .downTelegramFlex {
+        padding: 37px 0px 0px 0px !important;
+    }
+    .container .footer .footerContainer .rightContainer {
+        padding: 50px 0px 0px 0px !important;
+        width: 100% !important;
+    }
+    .container .footer .footerContainer .rightContainer h1 {
+        text-align: center;
+    }
+    .container .footer .footerContainer .rightContainer .rightDownFlex {
+        flex-direction: column !important;
+    }
+    .container .footer .footerContainer .rightContainer .rightDownFlex .facebookImg {
+        display: flex !important;
+        justify-content: center !important;
+        padding: 22px 0px !important;
+    }
+    .container .footer .footerContainer .rightContainer .rightDownFlex .InstaImg{
+        display: flex !important;
+        justify-content: center !important;
+    }
+    .container .footer .footerBottomText {
+        text-align: center !important;
+    }
+}

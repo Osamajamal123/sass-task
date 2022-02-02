@@ -1,0 +1,82 @@
+$box-background: #22222c;
+$number-text: white;
+@mixin box-size() {
+    background: $box-background;
+    border-radius: 12px;
+    width: 94%;
+    height: 134px;
+    margin: 0px 0px 0px 1px;
+}
+
+.container {
+    .boxContainer {
+        display: flex;
+        justify-content: center;
+        padding: 39px 0px;
+        flex-wrap: wrap;
+        .boxWidth {
+            display: flex;
+            width: 100%;
+            .boxSpace {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                .box {
+                    @include box-size();
+                }
+                .boxText {
+                    position: absolute;
+
+                    .boxDataFlex {
+                        display: flex;
+                        padding: 13px 0px 0px 16px;
+                        .titleText {
+                            padding: 2px 0px 0px 13px;
+                            h1 {
+                                color: #646472;
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 18px;
+                                line-height: 22px;
+                            }
+                            .numberText {
+                                padding: 11px 0px 0px 5px;
+                                h1 {
+                                    color: $number-text;
+                                    margin: 0px;
+                                    font-family: Inter;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 36px;
+                                }
+                            }
+                        }
+                        .personImg {
+                            img {
+                                width: 47px;
+                            }
+                        }
+                    }
+                }
+                .boxDollar {
+                    display: flex;
+                    justify-content: end;
+                    height: 100%;
+                    align-items: end;
+                    img {
+                        width: 63px;
+                    }
+                }
+                .boxImage {
+                    display: flex;
+                    justify-content: end;
+                    height: 100%;
+                    align-items: end;
+                    img {
+                        width: 119px;
+                    }
+                }
+            }
+        }
+    }
+}

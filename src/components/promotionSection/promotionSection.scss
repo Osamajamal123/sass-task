@@ -1,0 +1,230 @@
+$down-box-back: #22222c;
+$border-color: #275349;
+$up-background-color: #171721;
+$button-color: #32c58e;
+$button-text-color: #171721;
+$carousel-text: #32c58e;
+$paragrapgh-color: rgba(255, 255, 255, 0.5);
+
+@mixin color-dot($value) {
+    background-color: $value;
+    border-radius: 30px;
+    padding: 5px 5px;
+   
+}
+@mixin Carousel-text() {
+    color: $carousel-text;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 32px 0px 13px 0px;
+}
+@mixin Carousel-text2() {
+    color: rgba(255, 255, 255, 0.4);
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 32px 0px 13px 32px;
+}
+@mixin down-box-color() {
+    background: $down-box-back;
+    box-sizing: border-box;
+    border-radius: 12px;
+    width: 100%;
+    padding: 14px 15px 13px 15px;
+    margin: 0px 0px 34px 0px;
+}
+@mixin up-box-color() {
+    background: $up-background-color;
+    border: 2px solid $border-color;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding: 0px 15px 13px 15px;
+}
+@mixin text($value) {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 21px;
+    color: $value;
+}
+@mixin button() {
+    background: $button-color;
+    border-radius: 12px;
+    padding: 14px 0px 14px 0px;
+}
+@mixin button-text() {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    color: $button-text-color;
+    margin: 0px;
+}
+.container {
+    .promotionFlex {
+        display: flex;
+        padding: 34px 0px 0px 0px;
+        .sectionLeftBoxes {
+            width: 23%;
+            .boxupper {
+                @include down-box-color();
+                .boxUpperBorder {
+                    @include up-box-color();
+                    h1 {
+                        @include text(white);
+                    }
+                    .textImgFlex {
+                        display: flex;
+                        h1 {
+                            @include text(#646472);
+                            margin: 0px;
+                        }
+                        img {
+                            width: 17px;
+                            padding: 2px 0px 0px 33px;
+                        }
+                    }
+                    .greenButton {
+                        margin: 20px 0px 0px 0px;
+                        @include button();
+                        p {
+                            @include button-text();
+                        }
+                    }
+                }
+            }
+        }
+
+        .sectionCenterContainer {
+            margin: 0px 0px 0px 33px;
+            width: 35%;
+            .backgroundCenter {
+                background: $down-box-back;
+                box-sizing: border-box;
+                border-radius: 12px;
+                width: 100%;
+                padding: 21px 0px 24px 22px;
+                h1 {
+                    font-family: Inter;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 26px;
+                    color: white;
+                    margin: 0px;
+                }
+                .carouselData {
+                    display: flex;
+                    .colorh1 {
+                        border-bottom: 2px solid $carousel-text;
+                        h1 {
+                            @include Carousel-text();
+                        }
+                    }
+                    .colorh2 {
+                        border-bottom: 2px solid #43434c;
+                        h1 {
+                            @include Carousel-text2();
+                        }
+                    }
+                    .colorh3 {
+                        border-bottom: 2px solid #43434c;
+                        width: 247px;
+                        h1 {
+                            @include Carousel-text2();
+                        }
+                    }
+                }
+                .bitcoinDlex {
+                    display: flex;
+                    img {
+                        width: 440px;
+                        padding: 36px 0px 17px 0px;
+                    }
+                    .endLine {
+                        width: 6px;
+                        height: 80px;
+                        background-color: $button-color;
+                        border-radius: 10px;
+                        margin: 39px 0px 0px 18px;
+                    }
+                }
+                .buttonCenter {
+                    display: flex;
+                    justify-content: center;
+                    .blackButton {
+                        background: $up-background-color;
+                        border: 1px solid $border-color;
+                        border-radius: 12px;
+                        padding: 10px 35px 10px 35px;
+                        p {
+                            margin: 0px;
+                            font-family: Inter;
+                            font-size: 16px;
+                            text-align: center;
+                            color: white;
+                            font-weight: 300;
+                        }
+                    }
+                }
+            }
+        }
+
+        .sectionRightContainer {
+            padding: 0px 0px 0px 42px;
+            width: 35%;
+            .sectionRightBackground {
+                background: $down-box-back;
+                box-sizing: border-box;
+                padding: 46px 0px 30px 0px;
+                border-radius: 12px;
+                .haedingOne {
+                    h1 {
+                        color: $button-color;
+                        // font-family: Inter;
+                        text-align: center;
+                        margin: 0px;
+                        font-weight: 500;
+                        font-size: 32px;
+                    }
+                }
+                .haedingTwo {
+                    h1 {
+                        color: $button-color;
+                        // font-family: Inter;
+                        text-align: center;
+                        margin: 0px;
+                        font-weight: 500;
+                        font-size: 29px;
+                        padding-top: 11px;
+                    }
+                }
+                .paragraph {
+                    padding: 0px 59px;
+                    p {
+                        font-family: Inter;
+                        font-size: 16px;
+                        line-height: 26px;
+                        text-align: center;
+                        color: $paragrapgh-color;
+                    }
+                }
+                .bottomDotsFlex {
+                    display: flex;
+                    justify-content: center;
+                    .dotts {
+                        @include color-dot($button-color);
+                        margin: 0px 5px 0px 0px;
+                        
+                    }
+                    .dott2{
+                        @include color-dot(rgba(255, 255, 255, 0.15));
+                        margin: 0px 5px 0px 0px;
+                    }
+                   
+                }
+            }
+        }
+    }
+}

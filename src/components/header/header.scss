@@ -1,0 +1,131 @@
+$line-color: #1e1e25;
+$country-back: #292935;
+$button-color: #32c58e;
+@mixin nnavbar() {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  color: #83838a;
+  margin: 0px 0px 0px 30px;
+}
+@mixin button() {
+  background: $button-color;
+  border-radius: 12px;
+}
+.container {
+  .haederContainer {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 19px;
+    //  leftside
+    .leftSideFlex {
+      display: flex;
+      .leftSideheader {
+        .logoImg {
+          border-right: 2px solid $line-color;
+          img {
+            padding: 5px 50px 0px 0px;
+            width: 57px;
+          }
+        }
+      }
+      .navbars {
+        display: flex;
+        align-items: center;
+        ul {
+          display: flex;
+          li {
+            @include nnavbar();
+            list-style: none;
+            &:hover {
+              color: #32c58e;
+            }
+          }
+        }
+      }
+    }
+    .rightSide {
+      display: flex;
+      .borders {
+        border-left: 2px solid $line-color;
+        border-right: 2px solid $line-color;
+        display: flex;
+        padding: 0px 33px 0px 33px;
+        align-items: center;
+        .socialMediaImges {
+          img {
+            width: 25px;
+            padding-right: 27px;
+          }
+        }
+        .socialMediaImges2 {
+          img {
+            width: 25px;
+          }
+        }
+      }
+      .countryFlex {
+        display: flex;
+        align-items: center;
+        padding: 0px 0px 0px 38px;
+        .countrydata {
+          background: $country-back;
+          border-radius: 35px;
+          display: flex;
+          align-items: center;
+          padding: 4px 5px 0px 5px;
+          .countryImg {
+            img {
+              width: 21px;
+            }
+          }
+          .ArrowImg {
+            margin: -4px 0px 0px 6px;
+            img {
+            }
+          }
+        }
+      }
+      .buttonImagesFlex {
+        display: flex;
+        align-items: center;
+        .Brightness {
+          padding: 0px 33px 0px 33px;
+          img {
+            width: 29px;
+          }
+        }
+        .NotificationImage {
+          padding: 0px 33px 0px 0px;
+          img {
+            width: 29px;
+          }
+        }
+        .buttonFlex {
+          display: flex;
+          @include button();
+          padding: 14px 23px 7px 23px;
+          img {
+            width: 24px;
+          }
+          .logOut{
+            p {
+              margin: 0px;
+              font-family: Inter;
+              font-weight: 600;
+              font-size: 15px;
+              text-align: center;
+              color: #171721;
+              padding: 0px 0px 0px 9px;
+            }
+          }
+         
+        }
+      }
+    }
+  }
+}
+.borderLine{
+  border-bottom: 2px solid #1E1E25;
+  padding-top: 2px;
+}

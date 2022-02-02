@@ -1,0 +1,111 @@
+$footer-line-color: #1c3a37;
+$text-color: #ffffff;
+$footer-right-text-color: #646472;
+@mixin Text-color($value) {
+    color: $text-color;
+    font-size: $value;
+    font-family: Inter;
+}
+
+.container {
+    .footer {
+        padding: 0px 27px 0px 0px;
+        .footerLine {
+            background: $footer-line-color;
+            height: 2px;
+            margin-top: 22px;
+        }
+        .footerContainer {
+            display: flex;
+            padding: 34px 4px 20px 0px;
+            // leftside
+            .leftLogoFlex {
+                display: flex;
+                width: 38%;
+                .logoImg {
+                    img {
+                        width: 88px;
+                    }
+                }
+                .logoData {
+                    padding: 0px 0px 0px 42px;
+                    p {
+                        @include Text-color(13px);
+                        font-weight: 300;
+                    }
+                }
+            }
+            /////
+            // center
+            .centerContainer {
+                padding: 0px 0px 0px 30px;
+                width: 25%;
+                .upperTelegramFlex {
+                    display: flex;
+                    padding: 26px 0px 0px 0px;
+                    .telegramImg {
+                        img {
+                        }
+                    }
+                    .telegramtext {
+                        p {
+                            @include Text-color(13px);
+                            margin: 0px;
+                            padding: 0px 0px 0px 10px;
+                        }
+                    }
+                }
+                .downTelegramFlex {
+                    padding: 24px 0px 0px 0px;
+                    display: flex;
+                    .telegramImgdown {
+                        img {
+                        }
+                    }
+                    .telegramtextdown {
+                        p {
+                            @include Text-color(13px);
+                            margin: 0px;
+                            padding: 0px 0px 0px 10px;
+                        }
+                    }
+                }
+            }
+            // rightside
+            .rightContainer {
+                padding: 57px 0px 0px 0px;
+                width: 35%;
+                h1 {
+                    @include Text-color(15px);
+                }
+                .rightDownFlex {
+                    display: flex;
+                    justify-content: space-between;
+                    h1 {
+                        margin: 0px;
+                        color: $footer-right-text-color;
+                        padding: 3px 0px 0px 0px;
+                    }
+                    .rightDownFlex {
+                        display: flex;
+                        .facebookImg {
+                            padding: 0px 0px 0px 30px;
+                            img {
+                                width: 25px;
+                            }
+                        }
+                        .InstaImg {
+                            img {
+                                width: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footerBottomText {
+            color: $footer-right-text-color;
+            font-size: 14px;
+        }
+    }
+}
